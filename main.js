@@ -36,14 +36,27 @@ function scrollToTop() {
 
 window.onload = function() {
   document.getElementById('contact-form').addEventListener('submit', function(event) {
-      event.preventDefault();
-      // these IDs from the previous steps
-      emailjs.sendForm('service_no8x2ty', 'template_0l9pxfr', this)
-          .then(() => {
-              console.log('SUCCESS!');
-          }, (error) => {
-              console.log('FAILED...', error);
+    event.preventDefault();
+    
+    // these IDs from the previous steps
+    emailjs.sendForm('service_no8x2ty', 'template_0l9pxfr', this)
+      .then(() => {
+        alert("Message sent successfully!");
+        
+        const classNames = ["contact-name", "contact-email", "contact-message"];
+        
+        classNames.forEach(className => {
+          const elements = document.querySelectorAll('.' + className);
+          elements.forEach(element => {
+            element.value = ''; // Clear the value of each element
           });
+        });
+        
+        console.log("Form fields cleared!");
+      })
+      .catch(error => {
+        console.error('Error sending message:', error);
+      });
   });
 }
 
