@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>James Nuci Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script>
+      (function () {
+        emailjs.init({ publicKey: "ZLE8Jw-kKtIxRC-Pl" });
+      })();
+    </script>
+  </head>
+  <body>
+    <div class="header">
+      <a
+        href="https://www.linkedin.com/in/james-nuci/"
+        target="_blank"
+        class="linkedin-jump"
+      >
+        <img src="icons/linkedin-icon.png" alt="linkedin-icon" />
+      </a>
+      <a
+        href="https://github.com/jnuci/"
+        target="_blank"
+        class="github-jump"
+      >
+        <img src="icons/github-icon.png" alt="github-icon" />
+      </a>
+    </div>
+    <div class="name-block">
+      <div class="name-container">
+        <h1>James Nuci</h1>
+        <h3>Statistics and Data Science</h3>
+        <p>Passionate, data-driven, and curious</p>
+      </div>
+    </div>
+    <div class="contact-block">
+      <div class="contact-container">
+        <button class="contact-button" onclick="scrollBottom()">
+          Reach out to me!
+        </button>
+      </div>
+    </div>
+    <div class="mission-info-block">
+      <div class="objective-1">
+        <img class="mission-img" src="icons/etl-image.png" alt="etl-image" />
+        <p>Collection/Processing</p>
+        <p>
+          This section will highlight my experiences with data pipelines,
+          database tools, and storage technologies.
+        </p>
+      </div>
+      <div class="objective-2">
+        <img class="mission-img" src="icons/analytics-image.jpg" alt="data-use-image" />
+        <p>Leveraging</p>
+        <p>
+          This section will summarize my experiences with data use cases such as
+          machine learning, research, and analytics.
+        </p>
+      </div>
+      <div class="objective-3">
+        <img class="mission-img" src="icons/communication-image.png" alt="communication-image" />
+        <p>Communication</p>
+        <p>
+          This section will discuss how I effectively communicate and why it is important
+          in data analytics.
+        </p>
+      </div>
+    </div>
+    <!-- <div class="about-block">
+      <img
+        src="./assets/gojo.jpg"
+        alt="Image of me looking handsome"
+        class="about-image"
+        quality="100"
+      />
+      <span class="about-content">
+        <p>About Me</p>
+        <p>
+          Hello! I'm James, a data analyst and software developer. Currently, I
+          am just doing a whole lot of rotting in the Inland Empire, but (trust
+          me) I used to be sorta a big deal! Some might even say I had it going
+          on! I'll bounce back though. Give me a shot!
+        </p>
+      </span>
+    </div> -->
+    <div class="experience-container">
+      <button class="prev" onclick="prevSlide()">&#10094;</button>
+      <div class="experience-content">
+        <div class="slide">
+          <div class="project-img">
+            <img src="icons/etl-image.png" alt="project-image-1">
+          </div>
+          <div class="project-description">
+            In this project, I did these things some of these things using these technologies.
+          </div>
+        </div>
+        <div class="slide">
+          <div class="project-img">
+            <img src="icons/analytics-image.jpg" alt="project-image-2">
+          </div>
+          <div class="project-description">
+            In this project, I did these things some of these things using these technologies.
+          </div>
+        </div>
+        <div class="slide">
+          <div class="project-img">
+            <img src="icons/communication-image.png" alt="project-image-3">
+          </div>
+          <div class="project-description">
+            In this project, I did these things some of these things using these technologies.
+          </div>
+        </div>
+      </div>
+      <button class="next" onclick="nextSlide()">&#10095;</button>
+    </div>
+    <div class="contact-container">
+      <form id="contact-form">
+        <label>Name</label>
+        <input class="contact-name" type="text" name="user_name" />
+        <label>Email</label>
+        <input class="contact-email" type="email" name="user_email" />
+        <label>Message</label>
+        <textarea class="contact-message" name="message"></textarea>
+        <input class="contact-submit" type="submit" value="Send" />
+      </form>
+    </div>
+    <div class="footer">
+      <img src="icons/up-arrows.png" alt="up-arrows-icon" onclick="scrollToTop()">
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
