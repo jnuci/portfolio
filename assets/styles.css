@@ -1,0 +1,269 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* min-height: 100vh; */
+    /* min-width: 500px; */
+}
+
+.linkedin-jump,
+.github-jump {
+    width: 4em;
+    height: 4em;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.linkedin-jump img,
+.github-jump img {
+    width: 100%;
+    height: auto;
+}
+
+.header {
+    padding: 0.5em 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    flex-wrap: wrap;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.name-container,
+.email-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.name-container > h1, h3, p {
+    margin: 0;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.name-container h1 {
+    font-size: 60px;
+}
+
+.name-container h3 {
+    font-size: 24px;
+}
+.name-container p {
+    font-size: 18px;
+}
+
+.contact-button {
+    background-color: lightgreen;
+    margin: 1em 0 2em 0;
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-size: 16px;
+    border: none;
+}
+
+.mission-info-block {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    background-color: aliceblue;
+    width: 100%;
+}
+
+.objective-1,
+.objective-2,
+.objective-3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 200px;
+    min-width: auto;
+}
+
+.mission-img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.about-block {
+    margin: 0 15px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.about-image {
+    flex-basis: 40%;
+    max-width: 100%;
+}
+
+.about-content {
+    flex-basis: 40%
+}
+
+.experience-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex: 1 0 1;
+    gap: 20px;
+    max-width: 100%;
+    min-width: auto;
+}
+
+.experience-content button {
+    position: absolute;
+}
+
+.slide {
+    display: none;
+}
+
+.active-slide {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 100%;
+    width: auto;
+}
+
+.prev,
+.next {
+    height: fit-content;
+    font-size: 80px;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background: none;
+}
+
+.project-description {
+    height: 350px;
+    width: 700px;
+}
+
+.project-img {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    padding-bottom: 0;
+
+}
+
+.project-img p {
+    background-color: rgb(86, 176, 255);
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 30px;
+    margin: 0;
+    padding: 5px 0 5px 0;
+    border-radius: 0 0 30px 30px;
+    font-size: 18px;
+}
+
+.project-img img {
+    height: 270px;
+    width: 270px;
+}
+
+.project-img a {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-heading,
+experience-heading {
+    background-color: lightgreen;
+    padding: 20px 0 20px 0;
+    width: 100%;
+}
+
+.contact-heading h1,
+.experience-heading h1 {
+    text-align: center;
+    padding: 0;
+    margin-bottom: 10px;
+    margin-top: 0;
+}
+
+.contact-heading p,
+.experience-heading p {
+    margin: 0;
+    padding: 0;
+}
+
+.contact-container {
+    margin: 20px 0 50px 0;
+}
+
+#contact-form {
+    width: 350px;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+}
+
+#contact-form label {
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.contact-email,
+.contact-name,
+.contact-message {
+    border-width: 5px;
+    border-color: gray;
+}
+
+.contact-message {
+    flex: 5;
+    border-radius: 10px;
+}
+
+.contact-email,
+.contact-name,
+.contact-submit{
+    flex: 1;
+    border-radius: 10px;
+}
+
+.contact-submit {
+    margin: 10px 0px;
+    border-radius: 50px;
+    font-size: 18px;
+    background-color: rgb(86, 176, 255);
+    border: none;
+}
+
+.footer {
+    align-content: right;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: min-content;
+    padding: 10px 0;
+}
+
+.footer img {
+    height: 3em;
+    width: 3em;
+}
+
+.linkedin-jump:hover,
+.github-jump:hover,
+.contact-button:hover,
+.back-to-top-button:hover
+.prev:hover,
+.next:hover {
+    filter: brightness(1.2); /* Reduce brightness on hover */
+}
