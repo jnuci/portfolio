@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width" />
     <title>James Nuci Portfolio</title>
     <link rel="stylesheet" href="styles.css" />
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
@@ -19,14 +19,14 @@
         target="_blank"
         class="linkedin-jump"
       >
-        <img src="icons/linkedin-icon.png" alt="linkedin-icon" />
+        <img src="images/linkedin-icon.png" alt="linkedin-icon" />
       </a>
       <a
         href="https://github.com/jnuci/"
         target="_blank"
         class="github-jump"
       >
-        <img src="icons/github-icon.png" alt="github-icon" />
+        <img src="images/github-icon.png" alt="github-icon" />
       </a>
     </div>
     <div class="name-block">
@@ -37,23 +37,20 @@
       </div>
     </div>
     <div class="contact-block">
-      <div class="contact-container">
         <button class="contact-button" onclick="scrollBottom()">
           Reach out to me!
         </button>
-      </div>
     </div>
     <div class="mission-info-block">
       <div class="objective-1">
-        <img class="mission-img" src="icons/etl-image.png" alt="etl-image" />
+        <img class="mission-img" src="images/etl-image.png" alt="etl-image" />
         <p>Collection/Processing</p>
         <p>
-          This section will highlight my experiences with data pipelines,
-          database tools, and storage technologies.
+          I understand the value of clean data and the efforts behind maintaining a database.
         </p>
       </div>
       <div class="objective-2">
-        <img class="mission-img" src="icons/analytics-image.jpg" alt="data-use-image" />
+        <img class="mission-img" src="images/analytics-image.jpg" alt="data-use-image" />
         <p>Leveraging</p>
         <p>
           This section will summarize my experiences with data use cases such as
@@ -61,7 +58,7 @@
         </p>
       </div>
       <div class="objective-3">
-        <img class="mission-img" src="icons/communication-image.png" alt="communication-image" />
+        <img class="mission-img" src="images/communication-image.png" alt="communication-image" />
         <p>Communication</p>
         <p>
           This section will discuss how I effectively communicate and why it is important
@@ -86,35 +83,120 @@
         </p>
       </span>
     </div> -->
+    <div class="experience-heading">
+      <h1>Experience</h1>
+      <p>Samples of my Work</p>
+    </div>
     <div class="experience-container">
       <button class="prev" onclick="prevSlide()">&#10094;</button>
       <div class="experience-content">
         <div class="slide">
           <div class="project-img">
-            <img src="icons/etl-image.png" alt="project-image-1">
+            <a href="projects/Copy of Scientific Blog.pdf" target="_blank">
+              <img src="images/neural-network-icon.jpg" alt="linguistics_final_project">
+              <p>
+                View Here!
+              </p>
+            </a>
           </div>
           <div class="project-description">
-            In this project, I did these things some of these things using these technologies.
+            <h3>Music Genre Classification</h3>
+              <p>
+                In this blog-style paper, my colleagues and I conducted research around LSTM neural network models and their
+                use in classifying music genre solely based off of song lyrics. We explored using tokenizaion of individual words
+                and phenome-based models.
+              </p>
+              <b>Skills Used:</b>
+              <ul>
+                <li>Python</li>
+                <li>Tensorflow</li>
+                <li>Natural Language Processing</li>
+                <li>Team Collaboration</li>
+              </ul>
           </div>
         </div>
         <div class="slide">
           <div class="project-img">
-            <img src="icons/analytics-image.jpg" alt="project-image-2">
+            <a href="projects/sales_dashboard.pdf" target="_blank" >
+              <img src="images/power-bi.png" alt="" >
+              <p>
+                View Here!
+              </p>
+            </a>
           </div>
           <div class="project-description">
-            In this project, I did these things some of these things using these technologies.
+            <h3>Power BI Dashboard</h3>
+              <p>
+                In this project, I generated meaningful visualizations, highlihgted key statistics, and created an insights report
+                highlighting the performance of one segment of sales. Transaction data was retrieved from power BI.
+              </p>
+              <b>Skills Used:</b>
+              <ul>
+                <li>Power BI</li>
+                <li>DAX Query </li>
+                <li>Data Wrangling</li>
+                <li>Communication</li>
+              </ul>
           </div>
         </div>
         <div class="slide">
           <div class="project-img">
-            <img src="icons/communication-image.png" alt="project-image-3">
+            <a href="https://github.com/jnuci/949-coms" target="_blank">
+              <img src="projects/youtube.png" alt="project-image-3">
+              <p>
+                View Here!
+              </p>
+            </a>
           </div>
           <div class="project-description">
-            In this project, I did these things some of these things using these technologies.
+            <h3>YouTube ETL Pipeline</h3>
+              <p>
+                For the purpose of future analytics use, I developed an ETL (Extract, Transform, Load) pipeline leveraging
+                the YouTube Data API and PostgreSQL relational database. Comment data was extracted from a single channel. The data was then
+                cleaned and transformed before being loaded into a production database. Finally, the clean data was used to build a responsive
+                dashboard with Plotly Dash.
+              </p>
+              <b>Skills Used:</b>
+              <ul>
+                <li>Python</li>
+                <li>Data Cleaning</li>
+                <li>API Requests</li> 
+                <li>PostgreSQL</li>
+                <li>Plotly Dash</li>
+              </ul>
+          </div>
+        </div>
+        <div class="slide">
+          <div class="project-img">
+            <a href="https://jnuci.github.io/sorting-viz/" target="_blank">
+              <img src="projects/sorting-bars.PNG" alt="project-image-4">
+              <p>
+                View Here!
+              </p>
+            </a>
+          </div>
+          <div class="project-description">
+            <h3>Sorting Algorithm Visualizer</h3>
+              <p>
+                While studying for algorithm-style interviews, I was inspired to create a visualizer
+                for common sorting algorithms that would help me furhter grasp the concepts and improve
+                my programming knowledge at the same time. I used native JavaScript and react components
+                in order to write out and deliver
+              </p>
+              <b>Skills Used:</b>
+              <ul>
+                <li>JavaScript</li>
+                <li>HTML5/CSS</li>
+                <li>Algorithms</li> 
+              </ul>
           </div>
         </div>
       </div>
       <button class="next" onclick="nextSlide()">&#10095;</button>
+    </div>
+    <div class="contact-heading">
+      <h1>Contact Me</h1>
+      <p>Interested in working together? Let's talk!</p>
     </div>
     <div class="contact-container">
       <form id="contact-form">
@@ -128,7 +210,7 @@
       </form>
     </div>
     <div class="footer">
-      <img src="icons/up-arrows.png" alt="up-arrows-icon" onclick="scrollToTop()">
+      <img src="images/up-arrows.png" alt="up-arrows-icon" onclick="scrollToTop()">
     </div>
     <script src="main.js"></script>
   </body>
