@@ -60,4 +60,17 @@ window.onload = function() {
   });
 }
 
+function isMobile() {
+  const userAgent = navigator.userAgent || navigator.vendor || window.opera;
+  return /android|iphone|ipad|ipod|blackberry|iemobile|opera mini/i.test(userAgent);
+}
+
+function orientationAlert() {
+  if (isMobile() && window.innerHeight > window.innerWidth) { 
+    alert("Please turn device to landscape mode for best experience");
+  }
+}
+
+window.addEventListener('load', orientationAlert)
+
 showSlide(currentIndex);
