@@ -67,7 +67,7 @@ body {
     border: none;
 }
 
-.mission-info-block {
+.mission-info-container {
     display: flex;
     justify-content: center;
     gap: 40px;
@@ -92,35 +92,33 @@ body {
     display: block;
 }
 
-.about-block {
-    margin: 0 15px;
+.about-container {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
-    gap: 20px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+    padding: 0 20%;
 }
 
 .about-image {
-    flex-basis: 40%;
-    max-width: 100%;
+    width: 15em;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 255);
 }
 
 .about-content {
-    flex-basis: 40%
+    padding: 0 10%;
+    flex: 1 1 20%;
 }
 
 .experience-container {
     display: flex;
     flex-direction: row;
-    justify-content: center;
     align-items: center;
-    gap: 20px;
-    max-width: 100%;
-    padding: 20px 100px 20px 100px;
-}
-
-.experience-content button {
-    position: absolute;
+    margin: 20px 0;
 }
 
 .slide {
@@ -130,10 +128,15 @@ body {
 .active-slide {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    flex-wrap: wrap-reverse;
+    padding: 0 10%;
     justify-content: center;
-    height: 100%;
-    width: auto;
+}
+
+.project-description {
+    flex: 1 1 40%;
+    padding: 0px 10%;
+    margin: 0;
 }
 
 .prev,
@@ -146,24 +149,11 @@ body {
     background: none;
 }
 
-.project-description {
-    margin: 30px 0 30px 0;
-    min-width: 20em;
-    max-width: 40em;
-}
-
-@media (max-width: 600px) {
-    .project-description {
-        max-width: 20em;
-    }
-}
-
 .project-img {
     display: flex;
     flex-direction: column;
-    padding: 30px;
-    padding-bottom: 0;
-
+    align-items: center;
+    justify-content: center;
 }
 
 .project-img p {
@@ -171,17 +161,19 @@ body {
     text-align: center;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    height: 30px;
-    margin: 0;
-    padding: 5px 0 5px 0;
     border-radius: 0 0 30px 30px;
     font-size: 18px;
+    border: solid black;
+    border-top: none;
+    border-width: 3px;
 }
 
 .project-img img {
-    height: 15em;
+    border: solid black;
+    border-bottom: none;
+    border-width: 3px;
     width: 15em;
+    height: 15em;
 }
 
 .project-img a {

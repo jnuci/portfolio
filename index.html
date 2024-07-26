@@ -29,19 +29,15 @@
         <img src="images/github-icon.png" alt="github-icon" />
       </a>
     </div>
-    <div class="name-block">
-      <div class="name-container">
-        <h1>James Nuci</h1>
-        <h3>Statistics and Data Science</h3>
-        <p>Passionate, data-driven, and curious</p>
-      </div>
+    <div class="name-container">
+      <h1>James Nuci</h1>
+      <h3>Statistics and Data Science</h3>
+      <p>Passionate, data-driven, and curious</p>
     </div>
-    <div class="contact-block">
-        <button class="contact-button" onclick="scrollBottom()">
-          Reach out to me!
-        </button>
-    </div>
-    <div class="mission-info-block">
+    <button class="contact-button" onclick="scrollBottom()">
+      Reach out to me!
+    </button>
+    <div class="mission-info-container">
       <div class="objective-1">
         <img class="mission-img" src="images/etl-image.png" alt="etl-image" />
         <p>Collection/Processing</p>
@@ -68,15 +64,17 @@
         </p>
       </div>
     </div>
-    <!-- <div class="about-block">
+    <div class="about-container">
       <img
-        src="./assets/gojo.jpg"
+        src="./images/james-nuci.jpg"
         alt="Image of me looking handsome"
         class="about-image"
         quality="100"
       />
       <span class="about-content">
-        <p>About Me</p>
+        <h3>
+          About Me
+        </h3>
         <p>
           Hello! I'm James, a data analyst and software developer. Currently, I
           am just doing a whole lot of rotting in the Inland Empire, but (trust
@@ -84,114 +82,112 @@
           on! I'll bounce back though. Give me a shot!
         </p>
       </span>
-    </div> -->
+    </div>
     <div class="experience-heading">
       <h1>Experience</h1>
       <p>Samples of my Work</p>
     </div>
     <div class="experience-container">
       <button class="prev" onclick="prevSlide()">&#10094;</button>
-      <div class="experience-content">
-        <div class="slide">
-          <div class="project-img">
-            <a href="projects/Copy of Scientific Blog.pdf" target="_blank">
-              <img src="images/neural-network-icon.jpg" alt="linguistics_final_project">
-              <p>
-                View Here!
-              </p>
-            </a>
-          </div>
-          <div class="project-description">
-            <h3>Music Genre Classification</h3>
-              <p>
-                In this blog-style paper, my colleagues and I conducted research around LSTM neural network models and their
-                use in classifying music genre solely based off of song lyrics. We explored using tokenizaion of individual words
-                and phenome-based models.
-              </p>
-              <b>Skills Used:</b>
-              <ul>
-                <li>Python</li>
-                <li>Tensorflow</li>
-                <li>Natural Language Processing</li>
-                <li>Team Collaboration</li>
-              </ul>
-          </div>
+      <div class="slide">
+        <div class="project-img">
+          <a href="projects/Copy of Scientific Blog.pdf" target="_blank">
+            <img src="images/neural-network-icon.jpg" alt="linguistics_final_project">
+            <p>
+              View Here!
+            </p>
+          </a>
         </div>
-        <div class="slide">
-          <div class="project-img">
-            <a href="projects/sales_dashboard.pdf" target="_blank" >
-              <img src="images/power-bi.png" alt="" >
-              <p>
-                View Here!
-              </p>
-            </a>
-          </div>
-          <div class="project-description">
-            <h3>Power BI Dashboard</h3>
-              <p>
-                In this project, I generated meaningful visualizations, highlihgted key statistics, and created an insights report
-                highlighting the performance of one segment of sales. Transaction data was retrieved from power BI.
-              </p>
-              <b>Skills Used:</b>
-              <ul>
-                <li>Power BI</li>
-                <li>DAX Query </li>
-                <li>Data Wrangling</li>
-                <li>Communication</li>
-              </ul>
-          </div>
+        <div class="project-description">
+          <h3>Music Genre Classification</h3>
+            <p>
+              In this blog-style paper, my colleagues and I conducted research around LSTM neural network models and their
+              use in classifying music genre solely based off of song lyrics. We explored using tokenizaion of individual words
+              and phenome-based models.
+            </p>
+            <b>Skills Used:</b>
+            <ul>
+              <li>Python</li>
+              <li>Tensorflow</li>
+              <li>Natural Language Processing</li>
+              <li>Team Collaboration</li>
+            </ul>
         </div>
-        <div class="slide">
-          <div class="project-img">
-            <a href="https://github.com/jnuci/949-coms" target="_blank">
-              <img src="projects/youtube.png" alt="project-image-3">
-              <p>
-                View Here!
-              </p>
-            </a>
-          </div>
-          <div class="project-description">
-            <h3>YouTube ETL Pipeline</h3>
-              <p>
-                For the purpose of future analytics use, I developed an ETL (Extract, Transform, Load) pipeline leveraging
-                the YouTube Data API and PostgreSQL relational database. Comment data was extracted from a single channel. The data was then
-                cleaned and transformed before being loaded into a production database. Finally, the clean data was used to build a responsive
-                dashboard with Plotly Dash.
-              </p>
-              <b>Skills Used:</b>
-              <ul>
-                <li>Python</li>
-                <li>Data Cleaning</li>
-                <li>API Requests</li> 
-                <li>PostgreSQL</li>
-                <li>Plotly Dash</li>
-              </ul>
-          </div>
+      </div>
+      <div class="slide">
+        <div class="project-img">
+          <a href="projects/sales_dashboard.pdf" target="_blank" >
+            <img src="images/power-bi.png" alt="" >
+            <p>
+              View Here!
+            </p>
+          </a>
         </div>
-        <div class="slide">
-          <div class="project-img">
-            <a href="https://jnuci.github.io/sorting-viz/" target="_blank">
-              <img src="projects/sorting-bars.PNG" alt="project-image-4">
-              <p>
-                View Here!
-              </p>
-            </a>
-          </div>
-          <div class="project-description">
-            <h3>Sorting Algorithm Visualizer</h3>
-              <p>
-                While studying for algorithm-style interviews, I was inspired to create a visualizer
-                for common sorting algorithms that would help me furhter grasp the concepts and improve
-                my programming knowledge at the same time. I used native JavaScript and react components in order to
-                generate randomly sized bars and animate sorting algorithms.
-              </p>
-              <b>Skills Used:</b>
-              <ul>
-                <li>JavaScript</li>
-                <li>HTML5/CSS</li>
-                <li>Algorithms</li> 
-              </ul>
-          </div>
+        <div class="project-description">
+          <h3>Power BI Dashboard</h3>
+            <p>
+              In this project, I generated meaningful visualizations, highlihgted key statistics, and created an insights report
+              highlighting the performance of one segment of sales. Transaction data was retrieved from power BI.
+            </p>
+            <b>Skills Used:</b>
+            <ul>
+              <li>Power BI</li>
+              <li>DAX Query </li>
+              <li>Data Wrangling</li>
+              <li>Communication</li>
+            </ul>
+        </div>
+      </div>
+      <div class="slide">
+        <div class="project-img">
+          <a href="https://github.com/jnuci/949-coms" target="_blank">
+            <img src="projects/youtube.png" alt="project-image-3">
+            <p>
+              View Here!
+            </p>
+          </a>
+        </div>
+        <div class="project-description">
+          <h3>YouTube ETL Pipeline</h3>
+            <p>
+              For the purpose of future analytics use, I developed an ETL (Extract, Transform, Load) pipeline leveraging
+              the YouTube Data API and PostgreSQL relational database. Comment data was extracted from a single channel. The data was then
+              cleaned and transformed before being loaded into a production database. Finally, the clean data was used to build a responsive
+              dashboard with Plotly Dash.
+            </p>
+            <b>Skills Used:</b>
+            <ul>
+              <li>Python</li>
+              <li>Data Cleaning</li>
+              <li>API Requests</li> 
+              <li>PostgreSQL</li>
+              <li>Plotly Dash</li>
+            </ul>
+        </div>
+      </div>
+      <div class="slide">
+        <div class="project-img">
+          <a href="https://jnuci.github.io/sorting-viz/" target="_blank">
+            <img src="projects/sorting-bars.PNG" alt="project-image-4">
+            <p>
+              View Here!
+            </p>
+          </a>
+        </div>
+        <div class="project-description">
+          <h3>Sorting Algorithm Visualizer</h3>
+            <p>
+              While studying for algorithm-style interviews, I was inspired to create a visualizer
+              for common sorting algorithms that would help me furhter grasp the concepts and improve
+              my programming knowledge at the same time. I used native JavaScript and react components in order to
+              generate randomly sized bars and animate sorting algorithms.
+            </p>
+            <b>Skills Used:</b>
+            <ul>
+              <li>JavaScript</li>
+              <li>HTML5/CSS</li>
+              <li>Algorithms</li> 
+            </ul>
         </div>
       </div>
       <div class="slide">
