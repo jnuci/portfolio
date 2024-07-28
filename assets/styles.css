@@ -110,11 +110,12 @@ body {
     height: auto;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 255);
+    margin: 10px 0;
 }
 
 .about-content {
     padding: 0 5%;
-    flex: 0 1 30%;
+    flex: 1 0 30%;
 }
 
 .about-content p, h3 {
