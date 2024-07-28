@@ -67,27 +67,32 @@ body {
 
 .mission-info-container {
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
-    gap: 40px;
     background-color: aliceblue;
+    padding: 0 10%;
     width: 100%;
+    gap: 5%;
 }
 
-.objective-1,
-.objective-2,
-.objective-3 {
+.objective {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    max-width: 200px;
-    min-width: auto;
+    flex: 1 1 5%;
+    max-width: 12em;
 }
 
-.mission-img {
-    max-width: 100%;
-    height: auto;
-    display: block;
+.objective img {
+    height: 12em;
+    width: 12em;
+}
+
+.objective h4 {
+    margin: 0;
+    margin-top: 5px;
 }
 
 .about-container {
@@ -108,8 +113,8 @@ body {
 }
 
 .about-content {
-    padding: 0 10%;
-    flex: 1 1 20%;
+    padding: 0 5%;
+    flex: 0 1 30%;
 }
 
 .about-content p, h3 {
@@ -136,7 +141,7 @@ body {
 }
 
 .project-description {
-    flex: 1 1 40%;
+    flex: 0 1 40%;
     padding: 0px 10%;
     margin: 0;
 }
@@ -209,7 +214,7 @@ body {
 }
 
 .contact-container {
-    margin: 20px 0 50px 0;
+    margin: 20px 0;
 }
 
 #contact-form {
@@ -252,17 +257,16 @@ body {
 }
 
 .footer {
-    align-content: right;
     position: fixed;
     bottom: 0;
     right: 0;
-    width: min-content;
-    padding: 10px 0;
 }
 
 .footer img {
     height: 3em;
     width: 3em;
+    padding: 0;
+    margin: 0;
 }
 
 .linkedin-jump:hover,
