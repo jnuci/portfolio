@@ -300,8 +300,10 @@ body {
 .linkedin-jump:hover,
 .github-jump:hover,
 .contact-button:hover,
-.back-to-top-button:hover
+.contact-submit:hover,
+.back-to-top-button:hover,
 .prev:hover,
-.next:hover {
-    filter: brightness(1.2); /* Reduce brightness on hover */
+.next:hover,
+.indicator-icon:hover {
+    filter: brightness(0.8); /* Reduce brightness on hover */
 }
