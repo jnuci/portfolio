@@ -1,13 +1,26 @@
 let currentIndex = 0;
 const slides = document.querySelectorAll(".slide");
+const container = document.querySelector('.slide-indicator');
+
 function showSlide(index) {
   slides.forEach((slide, i) => {
     if (i === index) {
-      slide.classList.add("active-slide"); // Add class to show the slide
+      slide.classList.add("active-slide");  // Add class to show the slide
     } else {
       slide.classList.remove("active-slide"); // Remove class to hide the slide
     }
   });
+}
+
+function showIndicator(index) {
+  const indicators = document.querySelectorAll(".indicator-icon")
+  indicators.forEach((icon, i) => {
+    if (i === index) {
+      icon.classList.add("active-icon");  // Add class to show the slide
+    } else {
+      icon.classList.remove("active-icon"); // Remove class to hide the slide
+    }
+  })
 }
 
 function nextSlide() {
@@ -16,6 +29,7 @@ function nextSlide() {
     currentIndex = 0;
   }
   showSlide(currentIndex);
+  showIndicator(currentIndex);
 }
 
 function prevSlide() {
@@ -24,6 +38,7 @@ function prevSlide() {
     currentIndex = slides.length - 1;
   }
   showSlide(currentIndex);
+  showIndicator(currentIndex);
 }
 
 function scrollBottom() {
@@ -34,7 +49,30 @@ function scrollToTop() {
   document.documentElement.scrollTop = 0;
 }
 
-window.onload = function() {
+document.addEventListener('DOMContentLoaded', () => {
+  
+  slides.forEach((slide, i) => {
+      const newDiv = document.createElement('div');
+      newDiv.classList.add(`indicator-icon`)
+      if (i == 0) {
+        newDiv.classList.add("active-icon")
+      }
+      if (container) {
+        container.appendChild(newDiv);
+      } else {
+        console.log("no container");
+      }
+  })
+
+  const indicators = document.querySelectorAll(".indicator-icon")
+  indicators.forEach((icon, index) => {
+    icon.addEventListener('click', () => {
+      currentIndex = index;
+      showSlide(currentIndex);
+      showIndicator(currentIndex);
+    })
+  })
+
   document.getElementById('contact-form').addEventListener('submit', function(event) {
     event.preventDefault();
     
@@ -57,8 +95,10 @@ window.onload = function() {
       .catch(error => {
         console.error('Error sending message:', error);
       });
-  });
-}
+    });
+    showSlide(currentIndex);
+    showIndicator(currentIndex);
+});
 
 // function isMobile() {
 //   const userAgent = navigator.userAgent || window.opera;
@@ -72,5 +112,3 @@ window.onload = function() {
 // }
 
 // window.addEventListener('load', orientationAlert)
-
-showSlide(currentIndex);
