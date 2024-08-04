@@ -49,7 +49,7 @@ function scrollToTop() {
   document.documentElement.scrollTop = 0;
 }
 
-document.addEventListener('DOMContentLoaded', () => {
+window.onload = function() {
   
   slides.forEach((slide, i) => {
       const newDiv = document.createElement('div');
@@ -96,9 +96,10 @@ document.addEventListener('DOMContentLoaded', () => {
         console.error('Error sending message:', error);
       });
     });
-    showSlide(currentIndex);
-    showIndicator(currentIndex);
-});
+  };
+  
+showSlide(currentIndex);
+showIndicator(currentIndex);
 
 // function isMobile() {
 //   const userAgent = navigator.userAgent || window.opera;
